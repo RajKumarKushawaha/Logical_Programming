@@ -8,6 +8,8 @@
 // After these divisions, check the result:
 // If n == 1 → all prime factors were 2, 3, or 5 → Ugly Number.
 // If n > 1 → it has some other prime factor → Not Ugly.
+// Example 1 2 3 4 5 6 8 9 10 12 15 16 18 20 24 25 27 30 32 36
+
 // Example: 30 → factors (2,3,5)
 
 public class UglyNo {
