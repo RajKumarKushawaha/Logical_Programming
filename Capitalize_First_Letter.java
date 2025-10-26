@@ -6,17 +6,20 @@ public class Capitalize_First_Letter {
 
     static void capital_first_letter(String str){
         String[] str1 = str.split(" ");
+        String result = "";
+
         for(int i=0; i<str1.length; i++){
-            if(str1[i].charAt(0) >= 97 && str1[i].charAt(0) <= 122){
-                str1[i].charAt(0)-=32;
+            char firstLetter = str1[i].charAt(0);
+            if(firstLetter >='a' && firstLetter <='z'){
+                firstLetter-=32;
             }
+            str1[i] = firstLetter + str1[i].substring(1);
+            result+=str1[i]+" ";
         }
-        for(int i=0; i<str1.length; i++){
-            System.out.print(str1[i]+ " ");
-        }
+        System.out.println(result);
     }
     public static void main(String[] args) {
-        String str = "hello word";
+        String str = "hi i am raj, how are you?";
         capital_first_letter(str);
     }
 }
